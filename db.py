@@ -14,7 +14,7 @@ try:
         port=int(os.getenv("MYSQLPORT", 3306)),
         user=os.getenv("MYSQLUSER"),
         password=os.getenv("MYSQLPASSWORD"),
-        database=os.getenv("MYSQLDATABASE")
+        database="railway"
     )
 
     print("✅ Connected to MySQL successfully!")
