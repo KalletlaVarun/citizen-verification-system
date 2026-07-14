@@ -87,37 +87,37 @@ Only the fields provided by the applicant are considered while calculating the f
 
 ### Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/dashboard1.png)
 
 ---
 
 ### Historical Record Search
 
-![Search Records](screenshots/search_records.png)
+![Search Records](screenshots/search_records1.png)
 
 ---
 
 ### Search Results
 
-![Search Results](screenshots/search_results.png)
+![Search Results](screenshots/search_results1.png)
 
 ---
 
 ### Citizen Verification Request
 
-![New Application](screenshots/new_application.png)
+![New Application](screenshots/new_application1.png)
 
 ---
 
 ### Verification Report
 
-![Verification Report](screenshots/verification_report.png)
+![Verification Report](screenshots/verification_report1.png)
 
 ---
 
 ### Verification History
 
-![Verification History](screenshots/verification_history.png)
+![Verification History](screenshots/verification_history1.png)
 
 ---
 

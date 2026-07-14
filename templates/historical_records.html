@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block title %}Historical Records | SmartVerify{% endblock %}
+{% block content %}
+<div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4"><div><p class="eyebrow mb-2">Database</p><h1 class="page-heading">Historical records</h1><p class="page-subtitle">Browse the citizen records held in the verification database.</p></div><a href="/" class="btn btn-outline-secondary"><i class="bi bi-arrow-left me-1"></i>Dashboard</a></div>
+<div class="panel overflow-hidden"><div class="table-responsive"><table class="table table-hover"><thead><tr><th>ID</th><th>Name</th><th>Father's name</th><th>District</th><th>Constituency</th><th>Status</th><th></th></tr></thead><tbody>{% for row in records %}<tr><td>#{{ row.history_id }}</td><td class="fw-semibold">{{ row.first_name }} {{ row.last_name }}</td><td>{{ row.father_name or '—' }}</td><td>{{ row.district or '—' }}</td><td>{{ row.constituency or '—' }}</td><td><span class="badge text-bg-light">{{ row.status_1 or 'Not set' }}</span></td><td><a href="/record/{{ row.history_id }}" class="btn btn-sm btn-outline-primary">View</a></td></tr>{% else %}<tr><td colspan="7"><div class="empty-state"><i class="bi bi-folder2-open d-block mb-2"></i>No historical records found.</div></td></tr>{% endfor %}</tbody></table></div></div>
+{% endblock %}

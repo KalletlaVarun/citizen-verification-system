@@ -59,7 +59,7 @@ def verify_application(application_id):
 
         connection.commit()
 
-        return None,0,"Manual Review",{
+        return None, 0, "Manual Review", {
             "first_name":0,
             "last_name":0,
             "father_name":0,
@@ -68,7 +68,7 @@ def verify_application(application_id):
             "phone":0,
             "district":0,
             "constituency":0
-        }
+        }, "No matching family record was found in the historical database. The application requires manual verification by an officer."
 
     # -----------------------------
     # Compare only family members
